@@ -1,0 +1,9 @@
+<div class="bz-month-cell">
+    <span class="pull-right bg-dark text-white rounded-circle px-1 py-1 mx-1">@(Day.ToString("00"))</span>
+
+</div>
+
+@code{
+    [Parameter] 
+    public int Day { get; set; }
+}

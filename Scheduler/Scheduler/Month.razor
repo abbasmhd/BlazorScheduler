@@ -1,0 +1,12 @@
+@page "/scheduler/View/Month"
+
+<div class="bz-month-wrapper">
+    @for (int i = 1; i <= CellNumbers; i++)
+    {
+       <Cell Day=i></Cell>     
+    }
+</div>
+
+@code {
+    public int CellNumbers { get; set; } = 35;
+}
